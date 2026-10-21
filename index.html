@@ -1,0 +1,296 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rameyance Detail Solutions | Mobile Auto Care Auburn, AL</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        dark: {
+                            900: '#0b0f17',
+                            800: '#111827',
+                            700: '#1f2937',
+                            600: '#374151',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b0f17;
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef08a 0%, #eab308 50%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to right, #ca8a04, #eab308, #ca8a04) 1;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-gold-500 selection:text-black">
+
+    <!-- TOP ANNOUNCEMENT BAR: BOOKING POLICY -->
+    <div class="bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-600 text-black font-semibold text-xs md:text-sm py-2.5 px-4 text-center shadow-md">
+        <div class="max-w-7xl mx-auto flex items-center justify-center space-x-2">
+            <i class="fa-solid fa-calendar-check text-black"></i>
+            <span><strong>Standard Booking:</strong> Mondays Only (9:00 AM – 3:00 PM). Midweek requests (Tue–Thu) subject to <strong>Priority Up-Charge ($150+)</strong>.</span>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="sticky top-0 z-50 bg-dark-900/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Info -->
+            <div class="flex flex-col">
+                <a href="#" class="font-heading font-extrabold text-xl md:text-2xl tracking-wider text-white flex items-center gap-2">
+                    <i class="fa-solid fa-car-rear text-gold-500"></i>
+                    <span>RAMEYANCE <span class="gold-gradient-text">DETAIL</span></span>
+                </a>
+                <span class="text-[10px] md:text-xs text-gray-400 font-medium tracking-wide">
+                    Value Restoration & Mobile Care • Auburn, AL & Surrounding
+                </span>
+            </div>
+
+            <!-- Actions -->
+            <div class="flex items-center space-x-3">
+                <a href="https://bliq.app" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-dark-800 hover:bg-dark-700 text-gold-400 border border-gold-500/40 px-3.5 py-2 rounded-xl text-xs font-semibold transition-all shadow-sm">
+                    <i class="fa-solid fa-address-card"></i> Bliq Digital Card
+                </a>
+                <a href="#booking-section" class="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-black font-bold px-4 py-2 rounded-xl text-xs md:text-sm transition-all shadow-lg hover:shadow-gold-500/20">
+                    Book Monday
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative py-16 md:py-24 px-4 overflow-hidden border-b border-gray-800/80">
+        <!-- Background Accent Grid -->
+        <div class="absolute inset-0 bg-[radial-gradient(#374151_1px,transparent_1px)] [background-size:16px_16px] opacity-20 pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-medium mb-6">
+                <i class="fa-solid fa-shield-halved"></i> Executive Mobile Detailing & Value Restoration
+            </div>
+            
+            <h1 class="font-heading text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Restore Peak Showroom Value To <br class="hidden sm:inline"/>
+                <span class="gold-gradient-text">Your Personal & Executive Vehicles</span>
+            </h1>
+
+            <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-8 font-light">
+                Professional, low-overhead mobile detailing brought directly to your location in Auburn, Alabama. Dedicated focus, pristine execution, zero hassle.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#booking-section" class="w-full sm:w-auto bg-gradient-to-r from-gold-500 to-gold-600 text-black font-bold text-base px-8 py-3.5 rounded-xl shadow-xl hover:scale-[1.02] transition-all">
+                    Book Monday Slot (9:00 AM – 3:00 PM)
+                </a>
+                <a href="#services-section" class="w-full sm:w-auto bg-dark-800 text-gray-200 border border-gray-700 hover:bg-dark-700 font-medium text-base px-6 py-3.5 rounded-xl transition-all">
+                    Explore Packages
+                </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto pt-8 border-t border-gray-800/60 text-xs text-gray-400">
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i> Auburn, AL Local
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-user-shield text-gold-500"></i> Fully Mobile Convenience
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-gem text-gold-500"></i> High-Grade Products
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-clock text-gold-500"></i> Focused 1-on-1 Service
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES PACKAGES SECTION -->
+    <section id="services-section" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="font-heading text-2xl md:text-4xl font-bold text-white mb-3">Service Packages</h2>
+            <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto">
+                Transparent pricing engineered for value restoration. Select the package that matches your vehicle's needs.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Package 1 -->
+            <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 flex flex-col justify-between hover:border-gray-700 transition-all shadow-lg">
+                <div>
+                    <div class="text-gray-400 font-semibold text-xs uppercase tracking-wider mb-2">Essential Care</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Express Maintenance</h3>
+                    <div class="text-3xl font-extrabold text-gold-400 mb-4">$150 <span class="text-xs text-gray-400 font-normal">/ vehicle</span></div>
+                    <p class="text-gray-300 text-sm mb-6">Ideal for routine up-keep and preserving a clean exterior finish and fresh interior scent.</p>
+                    
+                    <ul class="space-y-3 text-xs md:text-sm text-gray-300 mb-8">
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Hand Foam Wash & Microfiber Dry</li>
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Wheel & Tire Scrub + Tire Shine</li>
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Complete Interior Vacuum & Dust Off</li>
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Streak-Free Exterior/Interior Glass</li>
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Quick Spray Wax Protection</li>
+                    </ul>
+                </div>
+                <button onclick="selectPackage('Express Maintenance Detail ($150)', 150)" class="w-full bg-dark-700 hover:bg-dark-600 text-gray-200 font-semibold py-3 rounded-xl text-sm transition-all border border-gray-600">
+                    Select Express
+                </button>
+            </div>
+
+            <!-- Package 2 (MOST POPULAR) -->
+            <div class="bg-dark-800 border-2 border-gold-500 rounded-2xl p-6 flex flex-col justify-between relative shadow-2xl shadow-gold-500/10">
+                <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-gold-500 to-gold-600 text-black text-[11px] font-extrabold uppercase px-3 py-1 rounded-full shadow">
+                    Most Popular
+                </div>
+                <div>
+                    <div class="text-gold-400 font-semibold text-xs uppercase tracking-wider mb-2 mt-1">Full Restoration</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Full Interior & Exterior</h3>
+                    <div class="text-3xl font-extrabold text-gold-400 mb-4">$250 <span class="text-xs text-gray-400 font-normal">/ vehicle</span></div>
+                    <p class="text-gray-300 text-sm mb-6">Deep clean rejuvenation that resets the look, feel, and cleanliness of your vehicle inside and out.</p>
+                    
+                    <ul class="space-y-3 text-xs md:text-sm text-gray-300 mb-8">
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Everything in Express Maintenance</li>
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Deep Interior Upholstery Shampoo & Extraction</li>
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Leather Conditioning & Dashboard Protectant</li>
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Paint Clay Bar Treatment (Smooth Finish)</li>
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Premium Ceramic Spray Sealant (6-mo Guard)</li>
+                    </ul>
+                </div>
+                <button onclick="selectPackage('Full Interior & Exterior Detail ($250)', 250)" class="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-black font-bold py-3 rounded-xl text-sm transition-all shadow-md">
+                    Select Full Detail
+                </button>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="bg-dark-800 border border-gray-800 rounded-2xl p-6 flex flex-col justify-between hover:border-gray-700 transition-all shadow-lg">
+                <div>
+                    <div class="text-gray-400 font-semibold text-xs uppercase tracking-wider mb-2">Value Restoration</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Paint Correction & Coating</h3>
+                    <div class="text-3xl font-extrabold text-gold-400 mb-4">$450+ <span class="text-xs text-gray-400 font-normal">/ starting</span></div>
+                    p class="text-gray-300 text-sm mb-6">Designed for luxury or older vehicles needing oxidation, swirl mark removal, and gloss revival.</p>
+                    
+                    <ul class="space-y-3 text-xs md:text-sm text-gray-300 mb-8">
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Full Decontamination Wash & Iron Removal</li>
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Multi-Step Machine Compound & Polish</li>
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Removes Light Swirls & Dullness</li>
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Headlight Clarity Restoration (If Needed)</li>
+                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-500"></i> Long-Term Paint Sealant / Ceramic Protection</li>
+                    </ul>
+                </div>
+                <button onclick="selectPackage('Paint Correction & Value Restoration ($450+)', 450)" class="w-full bg-dark-700 hover:bg-dark-600 text-gray-200 font-semibold py-3 rounded-xl text-sm transition-all border border-gray-600">
+                    Select Paint Correction
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INTERACTIVE BOOKING FORM SECTION -->
+    <section id="booking-section" class="py-16 px-4 bg-dark-800/50 border-t border-b border-gray-800">
+        <div class="max-w-3xl mx-auto">
+            
+            <div class="bg-dark-900 border border-gray-800 rounded-3xl p-6 md:p-10 shadow-2xl">
+                <div class="text-center mb-8">
+                    <span class="text-gold-400 font-semibold text-xs uppercase tracking-wider">Mobile Service Scheduler</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-white mt-1">Book Your Appointment</h2>
+                    <p class="text-gray-400 text-xs md:text-sm mt-2">Standard slots available Mondays (9 AM - 3 PM). Midweek requests subject to up-charge.</p>
+                </div>
+
+                <form id="detailBookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-6">
+                    
+                    <!-- Selected Package Dropdown -->
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-2">Selected Package *</label>
+                        <select id="packageSelect" onchange="calculateTotal()" class="w-full bg-dark-800 border border-gray-700 rounded-xl px-4 py-3 text-gray-100 focus:outline-none focus:border-gold-500 text-sm">
+                            <option value="Full Interior & Exterior Detail ($250)" data-price="250">Full Interior & Exterior Detail ($250) - Recommended</option>
+                            <option value="Express Maintenance Detail ($150)" data-price="150">Express Maintenance Detail ($150)</option>
+                            <option value="Paint Correction & Value Restoration ($450+)" data-price="450">Paint Correction & Value Restoration ($450+)</option>
+                        </select>
+                    </div>
+
+                    <!-- Date Selection & Upcharge Calculator -->
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-2">Preferred Date *</label>
+                        <input type="date" id="bookingDate" onchange="calculateTotal()" required class="w-full bg-dark-800 border border-gray-700 rounded-xl px-4 py-3 text-gray-100 focus:outline-none focus:border-gold-500 text-sm">
+                        <p id="dateNotice" class="text-xs mt-2 text-gray-400">Select a Monday for standard pricing.</p>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-2">Full Name *</label>
+                            <input type="text" placeholder="John Doe" required class="w-full bg-dark-800 border border-gray-700 rounded-xl px-4 py-3 text-gray-100 focus:outline-none focus:border-gold-500 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-2">Phone Number *</label>
+                            <input type="tel" placeholder="(334) 555-0199" required class="w-full bg-dark-800 border border-gray-700 rounded-xl px-4 py-3 text-gray-100 focus:outline-none focus:border-gold-500 text-sm">
+                        </div>
+                    </div>
+
+                    <!-- Vehicle Info -->
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-2">Vehicle Make, Model & Year *</label>
+                        <input type="text" placeholder="e.g., 2018 Ford F-150 or 2020 Honda Accord" required class="w-full bg-dark-800 border border-gray-700 rounded-xl px-4 py-3 text-gray-100 focus:outline-none focus:border-gold-500 text-sm">
+                    </div>
+
+                    <!-- Service Location -->
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-2">Service Address (Auburn, AL Area) *</label>
+                        <input type="text" placeholder="Street Address in Auburn / Opelika" required class="w-full bg-dark-800 border border-gray-700 rounded-xl px-4 py-3 text-gray-100 focus:outline-none focus:border-gold-500 text-sm">
+                    </div>
+
+                    <!-- Estimated Summary Box -->
+                    <div class="bg-dark-800 p-4 rounded-xl border border-gray-700/80 space-y-2">
+                        <div class="flex justify-between text-xs text-gray-300">
+                            <span>Base Service Fee:</span>
+                            <span id="basePriceDisplay">$250.00</span>
+                        </div>
+                        <div id="upchargeRow" class="flex justify-between text-xs text-amber-400 hidden">
+                            <span>Priority Midweek Up-Charge (Tue-Thu):</span>
+                            <span>+$150.00</span>
+                        </div>
+                        <div class="border-t border-gray-700 pt-2 flex justify-between font-bold text-sm text-white">
+                            <span>Estimated Total:</span>
+                            <span id="totalPriceDisplay" class="text-gold-400 text-base">$250.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-black font-extrabold py-4 rounded-xl shadow-lg transition-all text-base uppercase tracking-wider">
+                        Submit Appointment Request
+                    </button>
+                </form>
+
+                <!-- Confirmation Message Overlay (Hidden by Default) -->
+                <div id="confirmationMessage" class="hidden text-center py-8 space-y-4">
+                    <div class="w-16 h-16 bg-
